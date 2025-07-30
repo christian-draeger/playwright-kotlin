@@ -1,4 +1,4 @@
-# Playwright Kotlin [![CI](https://github.com/christian-draeger/playwright-kotlin/actions/workflows/build.yml/badge.svg)](https://github.com/christian-draeger/playwright-kotlin/actions/workflows/build.yml) ![Maven Central Version](https://img.shields.io/maven-central/v/codes.draeger/kotlin-library-template-example?logo=sonatype&label=Release)
+# Playwright Kotlin [![CI](https://github.com/christian-draeger/playwright-kotlin/actions/workflows/build.yml/badge.svg)](https://github.com/christian-draeger/playwright-kotlin/actions/workflows/build.yml) ![Maven Central Version](https://img.shields.io/maven-central/v/codes.draeger/playwright-kotlin?logo=sonatype&label=Release)
 
 A Kotlin DSL over Playwright Java to write seek browser automations.
 

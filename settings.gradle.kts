@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-library-template"
+rootProject.name = "playwright-kotlin"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
