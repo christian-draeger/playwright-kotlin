@@ -5,14 +5,8 @@ plugins {
     id("kotlin-library-convention")
 }
 
-// aggregate dependents to an all-in-one library
-kotlin {
-    sourceSets {
-        commonMain.dependencies {
-            api(projects.core)
-            api(projects.example)
-        }
-    }
+subprojects {
+    apply(plugin = "kotlin-library-convention")
 }
 
 tasks {
@@ -26,8 +20,4 @@ tasks {
         dependsOn(detektAll)
         finalizedBy(koverXmlReport, koverHtmlReport)
     }
-}
-
-allprojects {
-    apply(plugin = "kotlin-library-convention")
 }

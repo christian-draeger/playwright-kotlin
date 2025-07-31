@@ -6,6 +6,7 @@ kotlinxCoroutines = "1.10.2"
 kotlinxDatetime = "0.7.1"
 kotlinxSerializationJSON = "1.9.0"
 mavenPublishPlugin = "0.34.0"
+playwright = "1.51.0"
 slf4j = "2.0.17"
 testLogger = "4.0.0"
 versionCatalogUpdate = "1.0.0"
@@ -28,6 +29,8 @@ kotlinxCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", 
 kotlinxDatetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 kotlinxSerialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJSON" }
 slf4jSimple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+
+playwright = { module = "com.microsoft.playwright:playwright", version.ref = "playwright" }
 
 [bundles]
 kotlinxEcosystem = [
