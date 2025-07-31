@@ -1,12 +1,14 @@
 import codes.draeger.playwright.core.playwright
 import codes.draeger.playwright.extensions.locator.click
 import com.microsoft.playwright.options.MouseButton
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import kotlin.io.path.Path
 import kotlin.random.Random
 
 class MainKtTest {
 
+    @Disabled("CI can only handle headless browsers, for local use only")
     @Test
     fun `playwright DSL exploration test`() {
         playwright {
@@ -78,6 +80,10 @@ class MainKtTest {
     @Test
     fun `playwright exploration test`() {
         val allTitles = playwright {
+            launchOptions = {
+                headless = true
+            }
+
             browser {
                 page {
                     +"https://playwright.dev/"
